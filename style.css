@@ -1,0 +1,134 @@
+body {
+  min-height: 3000px;
+}
+.jumbotron {
+  padding-top: 6rem;
+  background-color: skyblue;
+}
+
+#koleksi {
+  background-color: springgreen;
+}
+
+section {
+  padding-top: 6rem;
+}
+
+/* My Photo Section */
+.poto-box {
+  position: relative;
+  background-color: skyblue;
+  border-radius: 10px;
+  height: 550px;
+  transform-style: preserve-3d;
+}
+
+.poto-box::before {
+  content: "MY";
+  position: absolute;
+  color: red;
+  font-size: 5em;
+  font-weight: bolder;
+  font-size: italic;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.poto-box:hover::before {
+  opacity: 0.2;
+}
+
+.poto-box::after {
+  content: "POTO";
+  position: absolute;
+  color: black;
+  font-size: 4em;
+  font-weight: bold;
+  font-size: italic1;
+  top: 400px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.poto-box:hover::after {
+  opacity: 0.2;
+}
+
+.poto-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+.poto-box:hover .poto-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.poto-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.poto-box:hover .poto-detail-button {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.poto-img1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate3d(-50%, -52%, 100px);
+  max-width: 300px;
+  transition: 0.5s;
+  z-index: 200;
+}
+
+.poto-box:hover .poto-img1 {
+  transform: translate3d(-50%, -50%, 100px) rotate(19deg) scale(1.2);
+}
+
+.poto-img2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -52%, 100px);
+  max-width: 170px;
+  transition: 0.5s;
+  z-index: 200;
+}
+
+.poto-box:hover .poto-img2 {
+  transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
+}
+
+.poto-img3 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate3d(-50%, -52%, 100px);
+  max-width: 180px;
+  transition: 0.5s;
+  z-index: 200;
+}
+
+.poto-box:hover .poto-img3 {
+  transform: translate3d(-50%, -50%, 100px) rotate(0deg) scale(1.2);
+}
